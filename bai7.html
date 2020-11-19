@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print number</title>
+</head>
+<body>
+<p>Nhập dãy số từ 1 đến 100 </p>
+<p>Nếu số đó chia hết cho 3, in ra Fizz</p>
+<p>Nếu số đó chia hết cho 5, in ra Buzz</p>
+<p>Nếu số đó chia hết cho cả 3 và 5, in ra FizzBuzz</p>
+<script>
+    function fizzBuzz()
+    {
+        for(let i=1;i<=100;i++)
+        {
+            if (i % 15 ==0){
+                document.write('FizzBuzz' + '&nbsp;'+'&nbsp;');
+            } else if (i%3 ==0){
+                document.write('Fizz' + '&nbsp;'+'&nbsp;');
+            } else if (i%5 ==0){
+                document.write('Buzz'+ '&nbsp;'+'&nbsp;');
+            } else {
+                document.write(i + '&nbsp;'+'&nbsp;');
+            }
+        }
+    }
+    window.init=fizzBuzz();
+</script>
+</body>
+</html>

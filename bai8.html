@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Lucky Number</title>
+</head>
+<body>
+<p>Game đoán số</p>
+<input type="button" value="Chơi" onclick="luckyNumber();">
+<script>
+    function luckyNumber(){
+            let min = +parseInt(prompt("Nhập số khoảng dưới"));
+            let max = +parseInt(prompt("Nhập số khoảng trên"));
+            let luckynumber = Math.round(Math.random()*(max-min) + min);
+            console.log(luckynumber);
+        for (i=1;i<4;i++){
+            let number = +parseInt(prompt("Nhập số bạn mong muốn"));
+            if (number == luckynumber){
+                alert('You are lucky');
+            } else {
+                alert('Its wrong, try again')
+            }
+        } if (i==4){
+            alert("You Lose")
+        }
+    }
+
+</script>
+</body>
+</html>

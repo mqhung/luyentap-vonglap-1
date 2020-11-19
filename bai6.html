@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of 30 first number division 7</title>
+</head>
+<body>
+<p>Tính tổng 30 số chia hết cho 7 đầu tiên trong các số tự nhiên</p>
+<p id="result"></p>
+</body>
+<script>
+    let count = 0;
+    let sum = 0;
+    let i =0;
+    while (count <30){
+        if (i%7 == 0){
+            count++;
+            sum += i;
+        }
+        i+=1;
+    }
+    document.getElementById('result').innerHTML = sum;
+</script>
+</html>

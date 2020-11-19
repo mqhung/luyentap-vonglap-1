@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // // hien thi fibonaci
+
+    let fibonacci1 = 0;
+    let fibonacci2 = 1;
+    let fibonacci;
+    let ds = '0' +' '+'1'+' ';
+    for (i = 2; i <= 19; i++) {
+            fibonacci = fibonacci1 + fibonacci2;
+            fibonacci1 = fibonacci2;
+            fibonacci2 = fibonacci;
+            ds = ds + fibonacci + ' ';
+        }
+    document.write(ds);
+
+
+
+    // hiển thị N số chẵn đầu tiên//
+    // function displayEven(N) {
+    //     let count = 0;
+    //     for (i = 1; ; i++) {
+    //         if (i % 2 == 0) {
+    //             document.write(i + " ");
+    //             count++;
+    //         }
+    //         if (count > N) {
+    //             break;
+    //         }
+    //     }
+    // }
+    //     displayEven(50);
+
+</script>
+</html>

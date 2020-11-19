@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+</body>
+<script>
+    let nhietdo;
+    do {
+         nhietdo = +prompt("Nhập nhiệt độ");
+    }
+    while (isNaN(nhietdo) || nhietdo < 1 || nhietdo >100);
+
+    if (nhietdo <20) {
+        alert("Đề nghị tăng nhiệt độ");
+    } else if (nhietdo >100){
+        alert("Đề nghị giảm nhiệt độ");
+    } else {
+        alert("Nhiệt độ vừa phải");
+    }
+
+    // let nhietdo;
+    // do{
+    //     nhietdo=+prompt("Nhap nhiet do:");
+    // }while(isNaN(nhietdo)==true);
+    // if(nhietdo<20)
+    //     alert("Nhiet do qua thap, can tang nhiet do!");
+    // else if(nhietdo>100)
+    //     alert("Nhiet do qua cao, can giam nhiet do! ");
+    // else
+    //     alert("Nhiet do vua phai!");
+</script>
+</html>
